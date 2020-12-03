@@ -1,0 +1,17 @@
+<section class="pagination">
+    <a href="<%=path%>/?page=1">&laquo;</a>
+    <% if(currentPage > 1){ %>
+    <a href="<%=path%>/?page=<%= currentPage - 1 %>">&lt;</a>
+    <% } %>
+    <% for(let i = 1; i <= totalPage; i++) {%>
+    <% if (i == currentPage) { %>
+    <a href="<%=path%>/?page=<%= i %>" class="active"><%= i %></a>
+    <% } else {%>
+    <a href="<%=path%>/?page=<%= i %>"><%= i %></a>
+    <% } %>
+    <% } %>
+    <% if(currentPage < totalPage){ %>
+    <a href="<%=path%>/?page=<%= currentPage + 1 %>">&gt;</a>
+    <% } %>
+    <a href="<%=path%>/?page=<%= totalPage %>">&raquo;</a>
+</section>
