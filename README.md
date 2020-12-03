@@ -1,6 +1,8 @@
 # NodeJS-ShoppingWebsite
 
 
-###Installing pakages: run *npm install*
+### Installing pakages: 
+run *npm install*
 <br/>
-###Running the code: run *npm start*
+### Running the code: 
+run *npm start*
