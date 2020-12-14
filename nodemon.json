@@ -1,0 +1,6 @@
+{
+    "env": {
+        "MONGODB": "mongodb://localhost:27017/shop",
+        "STRIPE_KEY": "sk_test_51HogoMBgsgwnUXANtm0Lu9Sk30vtu09Bqm9wd8GT6ff49gV0rzVvuJiXMNzR1Dyf5gO5cVletcySWFECinkIlbCU00PxhLlZ9T"
+    }
+}

@@ -3,7 +3,7 @@ const Order = require('../models/order');
 const path = require('path')
 const fs = require('fs')
 const PDFDocument = require('pdfkit')
-const stripe = require('stripe')('sk_test_51HogoMBgsgwnUXANtm0Lu9Sk30vtu09Bqm9wd8GT6ff49gV0rzVvuJiXMNzR1Dyf5gO5cVletcySWFECinkIlbCU00PxhLlZ9T');
+const stripe = require('stripe')(process.env.STRIPE_KEY);
 
 
 
@@ -68,7 +68,7 @@ exports.getIndex = (req, res, next) => {
       res.render('shop/index', {
         prods: products,
         pageTitle: 'Shop',
-        path: '/',
+        path: '',
         totalPage: Math.ceil(totalItems / ITEM_PER_PAGE),
         currentPage: page
       });
